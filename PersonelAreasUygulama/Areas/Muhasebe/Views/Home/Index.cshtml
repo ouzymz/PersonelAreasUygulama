@@ -1,0 +1,17 @@
+﻿@using PersonelAreasUygulama.Models.ViewModels;
+
+@model PersonelVM
+@foreach (var item in Model.pList)
+{  
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Ad: @item.Ad</li>
+            <li class="list-group-item">Soyad: @item.Soyad</li>
+            <li class="list-group-item">Maas: @item.Maas</li>
+        </ul>
+        <div class="card-footer">
+            Personel Detayları Yukaridadir
+        </div>
+    </div><br />
+}
+
